@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.8;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background:linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:1.5rem;
+}
+
+/* General Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+/* About */
+.about{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:350px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.about-text{
+    flex:1;
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#0d47a1;
+    margin-bottom:10px;
+}
+
+/* Timeline */
+.timeline{
+    border-left:4px solid #0d47a1;
+    padding-left:25px;
+}
+
+.timeline-item{
+    margin-bottom:30px;
+}
+
+.timeline-item h3{
+    color:#0d47a1;
+}
+
+/* Quote */
+.quote{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.quote h2{
+    max-width:900px;
+    margin:auto;
+    font-size:2rem;
+    font-style:italic;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.8rem;
+    }
+
+    .about{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about img{
+        width:280px;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+}
